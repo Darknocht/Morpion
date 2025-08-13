@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 90vh;
+  background-color: #424854;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table, th, td{
+  border: 1px solid;
+  border-color: white;
+  border-collapse: collapse;
+}
+
+table tr td button{
+  background-color: white;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3.5em;
+  border-radius: 10px;
+}
+
+.red{
+  background-color: red;
+}
+
+/*.blue::before{
+  content: "X";
+  color:white;
+}*/
+
+
+.blue{
+  background-color: blue;
+}
+
+.reset{
+  padding: 1.25em;
+  background-color: #61dafb;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.none{
+  display: none;
+}
+
+#blue{
+  display: none;
+}
+
+#red{
+  display: none;
+}
+
+#tie{
+  display: none;
+}
+
+.joueur1{
+  color: blue;
+  font-weight: bolder;
+}
+
+.joueur2{
+  color: red;
+  font-weight: bolder;
+}
+
+p strong{
+  color: blue;
+}
+
+p strong+strong{
+  color: red;
+}
+
+header{
+  background-color: #9c0ce4;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: white;
+}
+
+nav{
+  min-height: 10vh;
+  background-color:#2e3136;
+  display: block;
+  align-items: baseline;
+  justify-content: center;
+  /*position: fixed;*/
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: contents;
+}
+
+nav button{
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  justify-content: center;
+}
+
+nav i{
+  font-weight: bolder;
+  font-size: large;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+  margin-top: 0.1em;
+}
+
+.selectionne, .selectionne i{
+  color: #9c0ce4;
+}
+
+article{
+  background-color: red;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+article h2::after{
+  content: "\00a0";
+}
